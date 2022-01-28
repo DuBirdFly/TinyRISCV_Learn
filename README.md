@@ -1,2 +1,8 @@
-# TinyRISCV_Learn
-learn tinyriscv, started on January 27, 2022
+## 工具的使用
+### make
+
+
+`make clean`
+清除该目录下make产生的一切东西
+
+
