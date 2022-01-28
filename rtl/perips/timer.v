@@ -25,16 +25,16 @@ module timer(
 
     input wire[31:0] data_i,
     input wire[31:0] addr_i,
-    input wire we_i,
+    input wire we_i,                //write enable
 
     output reg[31:0] data_o,
-    output wire int_sig_o
+    output wire int_sig_o           //interrupt signal output
 
     );
 
-    localparam REG_CTRL = 4'h0;
-    localparam REG_COUNT = 4'h4;
-    localparam REG_VALUE = 4'h8;
+    localparam REG_CTRL = 4'h0;     //控制寄存器
+    localparam REG_COUNT = 4'h4;    //
+    localparam REG_VALUE = 4'h8;    //
 
     // [0]: timer enable
     // [1]: timer int enable
