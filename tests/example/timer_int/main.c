@@ -14,7 +14,7 @@ int main()
 
 #ifdef SIMULATION
     TIMER0_REG(TIMER0_VALUE) = 500;     // 10us period
-    TIMER0_REG(TIMER0_CTRL) = 0x07;     // enable interrupt and start timer
+    TIMER0_REG(TIMER0_CTRL) = 0x07;     // enable interrupt and start timer,(0111)b
 
     while (1) {
         if (count == 2) {

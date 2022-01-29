@@ -37,8 +37,8 @@ module timer(
     localparam REG_VALUE = 4'h8;
 
     // [0]: timer enable
-    // [1]: timer int enable
-    // [2]: timer int pending, write 1 to clear it
+    // [1]: timer interrupt enable
+    // [2]: timer interrupt pending, write 1 to clear it
     // addr offset: 0x00
     reg[31:0] timer_ctrl;
 
@@ -49,7 +49,6 @@ module timer(
     // timer expired value
     // addr offset: 0x08
     reg[31:0] timer_value;
-
 
     assign int_sig_o = ((timer_ctrl[2] == 1'b1) && (timer_ctrl[1] == 1'b1))? `INT_ASSERT: `INT_DEASSERT;
 
