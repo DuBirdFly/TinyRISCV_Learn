@@ -23,3 +23,7 @@
 (当前c文件目录)make --> (sim目录)python .\sim_new_nowave.py ../tests/example/xxx/xxx.bin inst.data --> (cmd显示)pass --> (sim)目录下vcd波形文件刷新 --> gtkwave查看
 
 
+### Modelsim
+
+[用Modelsim产生/打开VCD文件](https://www.cnblogs.com/nevel/p/14456217.html)
+

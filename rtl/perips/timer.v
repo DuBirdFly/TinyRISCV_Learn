@@ -32,9 +32,9 @@ module timer(
 
     );
 
-    localparam REG_CTRL = 4'h0;     //控制寄存器
-    localparam REG_COUNT = 4'h4;    //
-    localparam REG_VALUE = 4'h8;    //
+    localparam REG_CTRL = 4'h0;
+    localparam REG_COUNT = 4'h4;
+    localparam REG_VALUE = 4'h8;
 
     // [0]: timer enable
     // [1]: timer int enable
